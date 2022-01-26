@@ -6,7 +6,7 @@ import styles from "../styles/ProductCard.module.scss";
 
 const ProductCard = (props) => {
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card}`}>
       <div className={styles.text}>{props.title}</div>
       <div className={styles.image}>
         <Image

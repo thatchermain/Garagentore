@@ -1,6 +1,6 @@
 const sectionOneTitle = [
   "Sektionaltor 40mm Stark U=1,12 [W/m²K] * nach Maß",
-  "Sektionaltor 60mm Stark U=0,9 [W/m²K] * nach Maß",
+  "Sektionaltor 60mm Stark U=0,9 [W/m²K] * nach Maß dfsdfsfsd",
   "Garagen Rolltor 77mm Aluminium Panzer nach Maß",
 ];
 const sectionTwoTitle = [
@@ -14,7 +14,7 @@ const sectionThreeTitle = [
   "Schwingtor ohne Deckenlaufschienen - im Sektionaltor Design nach Maß",
 ];
 const sectionFourTitle = [
-  "Industrie Sektionaltor - nach Maß",
+  "Industrie Sektionaltor - nach Maß Stahlrahmen nach Maß",
   "Industrie Rolltor - nach Maß",
 ];
 
