@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Header.module.css";
+import styles from "../styles/Header.module.scss";
 import { Row, Col } from "react-bootstrap";
 import Logo from "../assets/logo-resized.png";
 import Open from "../assets/open-hours-resized.png";
@@ -24,7 +24,6 @@ const Header = () => {
             </a>
           </Link>
         </Col>
-
         <Col md={5} xs={8} className="py-2 mx-auto">
           <div>
             <Image

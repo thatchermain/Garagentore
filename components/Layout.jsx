@@ -1,15 +1,18 @@
 import React from "react";
+import { Col, Row } from "react-bootstrap";
 import Footer from "./Footer";
 import Header from "./Header";
-import NavMenu from "./NavMenu";
+import NavbarLg from "./Navbar";
+import Offcan from "./Offcan";
 
 const Layout = ({ children }) => {
   return (
     <div>
       <Header className="" />
-      <NavMenu />
+      <Offcan />
+
+      <NavbarLg />
       <div>{children}</div>
-      <Footer />
     </div>
   );
 };

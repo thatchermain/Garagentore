@@ -1,0 +1,40 @@
+@import "./variables.scss";
+
+.navbar {
+  background: linear-gradient($bgGradientLight, $bgGradientDark);
+}
+.offBody {
+  background-color: $bgGradientDark;
+  color: $textLight;
+}
+.link {
+  font-size: 0.85rem;
+  color: $textLight;
+  border-bottom: 1px solid white;
+  transition: all 0.3s ease-in;
+  &:hover {
+    color: $linkColor;
+  }
+}
+.dropdownlink {
+  color: $textDark;
+  transition: all 0.3s ease-in;
+  &:hover {
+    color: $textDark;
+    background-color: $linkColor;
+  }
+}
+.navlink {
+  color: $textLight;
+  transition: all 0.3s ease-in;
+  &:hover {
+    color: $linkColor;
+  }
+}
+.menulinks {
+  margin: 0 auto;
+}
+.midlink {
+  border-left: 1px solid $textLight;
+  border-right: 1px solid $textLight;
+}
