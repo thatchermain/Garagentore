@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+.card {
+  background: transparent;
+  max-width: 33rem;
+  min-height: 400px;
+  color: $textLight;
+  cursor: pointer;
+}
+
+.text {
+  font-size: 0.9rem;
+}
+.btn {
+  padding: 0.5rem 4rem;
+  border: none;
+  transition: all 0.2s ease-in;
+}
+
+.card:hover .btn {
+  background-color: $bgGradientDark;
+  color: $bgLight;
+}

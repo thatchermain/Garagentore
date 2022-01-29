@@ -1,13 +1,22 @@
 import Head from "next/head";
 import { Col, Row } from "react-bootstrap";
 import ProductCard from "../components/ProductCard";
+import InfoCard from "../components/InfoCard";
 import styles from "../styles/Home.module.scss";
+import Cards from "../assets/info-icons/cards.png";
+import Cert from "../assets/info-icons/cert.png";
+import Door from "../assets/info-icons/door.png";
+import People from "../assets/info-icons/people.png";
+import Phone from "../assets/info-icons/phone.png";
+import Thumb from "../assets/info-icons/thumb.png";
 import {
   sectionOneTitle,
   sectionTwoTitle,
   sectionThreeTitle,
   sectionFourTitle,
 } from "../data/contentTitles";
+import infoCards from "../data/infoCards";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -114,6 +123,29 @@ const Home = () => {
             <ProductCard key={index} title={item} />
           ))}
         </Row>
+      </div>
+      <div className="info bg-primary mt-5">
+        <div className="container ">
+          <Row>
+            {infoCards.map((item, index) => {
+              return (
+                <Col
+                  className={`${styles.infoColumn} d-flex flex-column justify-contens-between align-items-betwwen align-items-sm-center`}
+                  lg={4}
+                  md={6}
+                  sm={12}
+                >
+                  <InfoCard
+                    key={index}
+                    title={item.title}
+                    text={item.text}
+                    icon={item.icon}
+                  />
+                </Col>
+              );
+            })}
+          </Row>
+        </div>
       </div>
     </div>
   );
