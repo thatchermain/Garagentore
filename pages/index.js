@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Col, Row } from "react-bootstrap";
 import ProductCard from "../components/ProductCard";
 import InfoCard from "../components/InfoCard";
+import footerData from "../data/footerData";
 import styles from "../styles/Home.module.scss";
 import Cards from "../assets/info-icons/cards.png";
 import Cert from "../assets/info-icons/cert.png";
@@ -17,6 +18,7 @@ import {
 } from "../data/contentTitles";
 import infoCards from "../data/infoCards";
 import Image from "next/image";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -147,6 +149,7 @@ const Home = () => {
           </Row>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

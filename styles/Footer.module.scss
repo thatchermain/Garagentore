@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.footer {
+  background-color: $bgGradientLight;
+  display: flex;
+  flex-wrap: wrap;
+  color: $textLight;
+}
+.item {
+  width: 200px;
+}
+.icon {
+  max-width: 2rem;
+  width: 100px;
+  margin: 10px;
+  font-size: 2rem;
+}
+.text {
+  margin: 0;
+  font-size: 1rem;
+  text-align: center;
+}
+.links {
+  font-size: 0.7rem;
+}
+.social {
+  max-width: 2rem;
+  width: 100px;
+  margin: 10px;
+  font-size: 2rem;
+}
+.copyrights {
+}
+.footerLogo {
+  max-width: 200px;
+}
