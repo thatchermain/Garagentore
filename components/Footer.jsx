@@ -35,7 +35,11 @@ const Footer = () => {
                     icon={item.icon}
                     className={`${styles.icon}`}
                   />
-                  <h4 className={styles.text}>{item.title}</h4>
+                  <Link href={"/"}>
+                    <a>
+                      <h4 className={styles.text}>{item.title}</h4>
+                    </a>
+                  </Link>
                 </Col>
               );
             })}
@@ -48,10 +52,26 @@ const Footer = () => {
         </p>
 
         <div lg={6} md={12} className="d-flex justify-content-center">
-          <FontAwesomeIcon icon={faFacebook} className={styles.social} />
-          <FontAwesomeIcon icon={faTwitter} className={styles.social} />
-          <FontAwesomeIcon icon={faYoutube} className={styles.social} />
-          <FontAwesomeIcon icon={faInstagram} className={styles.social} />
+          <Link href={"/"}>
+            <a>
+              <FontAwesomeIcon icon={faFacebook} className={styles.social} />
+            </a>
+          </Link>
+          <Link href={"/"}>
+            <a>
+              <FontAwesomeIcon icon={faTwitter} className={styles.social} />
+            </a>
+          </Link>
+          <Link href={"/"}>
+            <a>
+              <FontAwesomeIcon icon={faYoutube} className={styles.social} />
+            </a>
+          </Link>
+          <Link href={"/"}>
+            <a>
+              <FontAwesomeIcon icon={faInstagram} className={styles.social} />
+            </a>
+          </Link>
         </div>
       </div>
     </div>
