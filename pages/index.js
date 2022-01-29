@@ -130,13 +130,13 @@ const Home = () => {
             {infoCards.map((item, index) => {
               return (
                 <Col
+                  key={index}
                   className={`${styles.infoColumn} d-flex flex-column justify-contens-between align-items-betwwen align-items-sm-center`}
                   lg={4}
                   md={6}
                   sm={12}
                 >
                   <InfoCard
-                    key={index}
                     title={item.title}
                     text={item.text}
                     icon={item.icon}
