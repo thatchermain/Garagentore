@@ -22,13 +22,14 @@ const Footer = () => {
       <div className={`${styles.footer} p-5`}>
         <div className="">
           <Row className="">
-            {footerData.map((item) => {
+            {footerData.map((item, index) => {
               return (
                 <Col
                   lg={4}
                   md={6}
                   sm={12}
                   className="d-flex justify-content-sm-start align-items-center "
+                  key={index}
                 >
                   <FontAwesomeIcon
                     icon={item.icon}
