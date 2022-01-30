@@ -1,6 +1,4 @@
-import React from "react";
 import Link from "next/link";
-import styles from "../styles/Navbar.module.scss";
 import {
   Nav,
   Dropdown,
@@ -8,10 +6,11 @@ import {
   Navbar,
   Container,
 } from "react-bootstrap";
+import styles from "../styles/Navbar.module.scss";
 
 const NavbarLg = () => {
   return (
-    <div className={`d-none d-md-block p-2 mt-4 ${styles.navbar}`}>
+    <nav className={`d-none d-md-block p-2 mt-4 ${styles.navbar}`}>
       <Navbar variant="light">
         <Container>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -49,7 +48,6 @@ const NavbarLg = () => {
                   </Link>
                 </Dropdown.Item>
               </DropdownButton>
-
               <Link href="/konfigurator" className="text-primary">
                 <a className={styles.link}>konfigurator</a>
               </Link>
@@ -63,7 +61,7 @@ const NavbarLg = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+    </nav>
   );
 };
 

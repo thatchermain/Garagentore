@@ -26,13 +26,10 @@
 }
 .navlink {
   color: $textLight;
-  transition: all 0.3s ease-in;
+  transition: color 0.3s ease-in;
   &:hover {
     color: $linkColor;
   }
-}
-.menulinks {
-  margin: 0 auto;
 }
 .midlink {
   border-left: 1px solid $textLight;

@@ -1,6 +1,5 @@
-import React from "react";
-import styles from "../styles/Offcan.module.scss";
 import Link from "next/link";
+import styles from "../styles/Offcan.module.scss";
 
 const OffCanvasContent = () => {
   return (
@@ -9,7 +8,6 @@ const OffCanvasContent = () => {
         <h5>PRODUKTE</h5>
         <ul className="list-group">
           <Link href={"/produkte/garagentore"}>
-            {/* <a className="list-group-item"> Garagentore</a> */}
             <a className={`${styles.link} py-1`}> Garagentore</a>
           </Link>
           <Link href={"/produkte/turen"}>

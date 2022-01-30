@@ -1,17 +1,15 @@
-import React from "react";
-import Product from "../assets/product.jpg";
-import { Card, Button } from "react-bootstrap";
 import Image from "next/image";
+import Product from "../assets/product.jpg";
 import styles from "../styles/ProductCard.module.scss";
 
 const ProductCard = (props) => {
   return (
-    <div className={`${styles.card}`}>
+    <div className={`${styles.card} p-1 my-4`}>
       <div className={styles.text}>{props.title}</div>
       <div className={styles.image}>
         <Image
           src={Product}
-          alt="Logo"
+          alt="Product image"
           min-width="100%"
           min-height="100%"
           layout="responsive"

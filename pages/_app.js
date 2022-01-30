@@ -1,11 +1,11 @@
 import "bootstrap/dist/css/bootstrap.css";
 import Layout from "../components/Layout";
-import "../styles/globals.css";
+import "../styles/global.scss";
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </Layout>
   );
 }

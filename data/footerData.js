@@ -1,20 +1,14 @@
-import {
-  faUserFriends,
-  faPhone,
-  faThumbsUp,
-  faCreditCard,
-  faReceipt,
-  faWarehouse,
-} from "@fortawesome/free-solid-svg-icons";
+import { faWarehouse } from "@fortawesome/free-solid-svg-icons";
+
 const footerData = [
-  { title: "MontfaWarehouseevideos", icon: faWarehouse },
-  { title: "MontfaWarehouseeanleitungen", icon: faWarehouse },
+  { title: "Warehouseevideos", icon: faWarehouse },
+  { title: "Warehouseeanleitungen", icon: faWarehouse },
   { title: "Produktvideos", icon: faWarehouse },
   { title: "Produktdatenblätter", icon: faWarehouse },
   { title: "Produktbilder", icon: faWarehouse },
   { title: "Kataloge", icon: faWarehouse },
-  { title: "Zertifikate & Zulassungen", icon: faWarehouse },
-  { title: "Statische Berechnungen", icon: faWarehouse },
+  { title: "Zertifikate", icon: faWarehouse },
+  { title: "Statische", icon: faWarehouse },
   { title: "Schneelastzonen", icon: faWarehouse },
   { title: "Lieferbedingungen", icon: faWarehouse },
   { title: "Lieferzeiten", icon: faWarehouse },

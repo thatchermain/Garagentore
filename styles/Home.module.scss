@@ -1,6 +1,7 @@
+@import "./variables.scss";
 .span {
   font-weight: bold;
 }
 .infoColumn {
-  height: 500px;
+  border-bottom: 1px solid $bgGradientLight;
 }

@@ -1,5 +1,5 @@
-import React from "react";
-import footerData from "../data/footerData";
+import Link from "next/link";
+import { Col, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -7,21 +7,15 @@ import {
   faTwitter,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
-
-import { Col, Row } from "react-bootstrap";
-import { icon } from "@fortawesome/fontawesome-svg-core";
-import AG from "../assets/footer-icons/AG.svg";
-import Image from "next/image";
+import footerData from "../data/footerData";
 import styles from "../styles/Footer.module.scss";
-import Link from "next/link";
-import LogoFooter from "../assets/logoSmallNoText.png";
-import { faMapSigns } from "@fortawesome/free-solid-svg-icons";
+
 const Footer = () => {
   return (
-    <div className="links">
+    <footer>
       <div className={`${styles.footer} p-5`}>
-        <div className="">
-          <Row className="">
+        <div className="container">
+          <Row>
             {footerData.map((item, index) => {
               return (
                 <Col
@@ -33,11 +27,14 @@ const Footer = () => {
                 >
                   <FontAwesomeIcon
                     icon={item.icon}
-                    className={`${styles.icon}`}
+                    className="d-none d-sm-block my-2 mx-2"
+                    width={30}
                   />
                   <Link href={"/"}>
                     <a>
-                      <h4 className={styles.text}>{item.title}</h4>
+                      <h4 className={`${styles.text} p-1 mb-0`}>
+                        {item.title}
+                      </h4>
                     </a>
                   </Link>
                 </Col>
@@ -74,7 +71,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

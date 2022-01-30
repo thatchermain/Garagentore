@@ -1,14 +1,13 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../styles/Header.module.scss";
 import { Row, Col } from "react-bootstrap";
 import Logo from "../assets/logo-resized.png";
-import Open from "../assets/open-hours-resized.png";
+import Open from "../assets/open-hours.png";
+import styles from "../styles/Header.module.scss";
 
 const Header = () => {
   return (
-    <div className="container mt-2">
+    <header className="container mt-2">
       <Row className="d-flex justify-content-between align-items-end">
         <Col md={6} sm={12} className="py-2">
           <Link href={"/"}>
@@ -28,7 +27,7 @@ const Header = () => {
           <div>
             <Image
               src={Open}
-              alt="Logo"
+              alt="Open hours"
               min-width="100%"
               min-height="100%"
               layout="responsive"
@@ -37,7 +36,7 @@ const Header = () => {
           </div>
         </Col>
       </Row>
-    </div>
+    </header>
   );
 };
 

@@ -1,9 +1,6 @@
-import Image from "next/image";
-import React from "react";
-import infoCards from "../data/infoCards";
-import styles from "../styles/InfoCard.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import styles from "../styles/InfoCard.module.scss";
 
 const InfoCard = (props) => {
   return (

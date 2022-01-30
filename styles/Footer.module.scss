@@ -2,39 +2,22 @@
 
 .footer {
   background-color: $bgGradientLight;
-  display: flex;
-  flex-wrap: wrap;
   color: $textLight;
-}
-.item {
-  width: 200px;
-}
-.icon {
-  max-width: 2rem;
-  width: 100px;
-  margin: 10px;
-  font-size: 2rem;
 }
 .text {
-  margin: 0;
   font-size: 1rem;
-  text-align: center;
   color: $textLight;
-  transition: all 0.2s ease-out;
+  transition: color 0.2s ease-out;
   &:hover {
     color: $linkColor;
   }
 }
-.links {
-  font-size: 0.7rem;
-}
 .social {
-  max-width: 2rem;
-  width: 100px;
-  margin: 10px;
-  font-size: 2rem;
+  width: 2rem;
+  margin: 1rem;
   color: $textDark;
-  transition: all 0.2s ease-out;
+  font-size: 2rem;
+  transition: color 0.2s ease-out;
   &:hover {
     color: $linkColor;
   }
